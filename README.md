@@ -1,1 +1,1 @@
-# 02-coin-flip
+# 02-guess-number
