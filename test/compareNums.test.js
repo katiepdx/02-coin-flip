@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { compareNumbers } from '../gameUtils.js'
+import { compareNumbers } from '../gameUtils.js';
 
 const test = QUnit.test;
 
@@ -10,7 +10,7 @@ test('tests that compare numbers returns 1, 0, -1 if the number is too high, cor
     const userGuess1 = 1;
     const userGuess2 = 5;
     const userGuess3 = 8;
-    const actualNumber = 5
+    const actualNumber = 5;
 
     //Act 
     // Call the function you're testing and set the result to a const
