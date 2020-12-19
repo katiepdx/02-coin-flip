@@ -16,33 +16,33 @@ let tries = 3;
 
 // set event listeners to update state and DOM
 submitButton.addEventListener("click", () => {
-	let usersNumber = Number(usersGuess.value);
+    let usersNumber = Number(usersGuess.value);
 
-	let guessResponse = compareNumbers(usersNumber, number);
+    let guessResponse = compareNumbers(usersNumber, number);
 
-	if (guessResponse === 1) {
-		hint.textContent = 'Oops, too high!';
-		tries--;
-		triesRemaining.textContent = `You have ${tries} remaining`;
+    if (guessResponse === 1) {
+        hint.textContent = 'Oops, too high!';
+        tries--;
+        triesRemaining.textContent = `You have ${tries} remaining`;
 
-		if (tries <= 0) {
-			ohNoResults.classList.remove("hidden");
-			gameBox.classList.add("hidden");
-		}
+        if (tries <= 0) {
+            ohNoResults.classList.remove('hidden');
+            gameBox.classList.add('hidden');
+        }
 
-	} else if (guessResponse === -1) {
-		hint.textContent = 'Oops, too low!';
-		tries--;
-		triesRemaining.textContent = `You have ${tries} remaining`;
+    } else if (guessResponse === -1) {
+        hint.textContent = 'Oops, too low!';
+        tries--;
+        triesRemaining.textContent = `You have ${tries} remaining`;
 
-		if (tries <= 0) {
-			ohNoResults.classList.remove("hidden");
-			gameBox.classList.add("hidden");
-		}
+        if (tries <= 0) {
+            ohNoResults.classList.remove('hidden');
+            gameBox.classList.add('hidden');
+        }
 
-	} else if (guessResponse === 0) {
-		console.log('you win');
-		gameBox.classList.add("hidden");
-		winResults.classList.remove("hidden");
-	}
-})
+    } else if (guessResponse === 0) {
+        console.log('you win');
+        gameBox.classList.add('hidden');
+        winResults.classList.remove('hidden');
+    }
+});
