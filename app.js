@@ -15,7 +15,7 @@ let number = Math.ceil(Math.random() * 20);
 let tries = 3;
 
 // set event listeners to update state and DOM
-submitButton.addEventListener("click", () => {
+submitButton.addEventListener('click', () => {
     let usersNumber = Number(usersGuess.value);
 
     let guessResponse = compareNumbers(usersNumber, number);
@@ -41,7 +41,6 @@ submitButton.addEventListener("click", () => {
         }
 
     } else if (guessResponse === 0) {
-        console.log('you win');
         gameBox.classList.add('hidden');
         winResults.classList.remove('hidden');
     }
